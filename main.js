@@ -1,5 +1,10 @@
 const carouselSlide = document.querySelector('.carouselSlide')
 const carouselImages = document.querySelectorAll('.carouselSlide img')
+const showAlert = () => {
+    alert("Su solicitud ha sido enviada");
+}
+
+
 
 //Botones
 const botonAtras = document.querySelector('#botonAtras')
@@ -42,4 +47,12 @@ botonAtras.addEventListener('click', () => {
     }
  });
 
- 
+function imprimir(){
+    var nameInput = document.getElementById('nombre').value;
+    var mailInput = document.getElementById('mail').value;
+    var mensajeInput = document.getElementById('mensaje').value;
+    showAlert();
+    console.log("Nombre: " + nameInput + " Email: " + mailInput + " Mensaje: " + mensajeInput)
+    return false;
+}
+
