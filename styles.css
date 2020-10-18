@@ -43,6 +43,7 @@ nav ul li:hover {
 }
 
 #Hero {
+
     display: block;
     background: rgb(54, 51, 255);
     width: 100%;
@@ -75,4 +76,48 @@ nav ul li:hover {
     background: rgb(255, 208, 0);
     width: 100%;
     height: 100vh;
+}
+
+#Espacio {
+    display: block;
+    background: #ffffff;
+    width:  100%;
+    height: 64px;
+}
+
+.secciones {
+    padding-top: 64px;
+}
+
+
+.carouselContainer{
+    width: 100%;
+    height: 100vh;
+}
+.carouselSlide{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#botonAtras{
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    left: 3%;
+    font-size: 4em;
+    color: #ffffff;
+    opacity: 0.6;
+    cursor: pointer;
+}
+#botonAdelante{
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    right: 3%;
+    border: #000000;
+    font-size: 4em;
+    color: #ffffff;
+    opacity: 0.6;
+    cursor: pointer;
 }
