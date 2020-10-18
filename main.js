@@ -41,3 +41,5 @@ botonAtras.addEventListener('click', () => {
         carouselSlide.style.transform = 'translateX(' + (-size * contadorCarrusel) + 'px)';
     }
  });
+
+ 

@@ -51,18 +51,109 @@ nav ul li:hover {
 }
 
 #AboutMe {
-    display: block;
-    background: rgb(201, 255, 51);
+    display: flex;
+    background:	#99aab5;
     width: 100%;
     height: 100vh;
+    justify-content: initial;
+    flex-direction: column;
+    padding-bottom: 64px;   
+    font-family: 'Raleway', sans-serif;
 }
 
+#AboutMe h1{
+    color: #000000; 
+    font-size: 5em;
+    padding-bottom: 150px;
+}
+
+#AboutMe div ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+#AboutMe img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#AboutMe .listasParalelas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#AboutMe .listasParalelas ul{
+    list-style-type: circle;
+}
+
+#AboutMe h2{
+    font-size: 3em;
+}
+
+#AboutMe h6{
+    font-size: 1.5em;
+}
+
+
 #Experience {
-    display: block;
-    background: rgb(51, 255, 78);
+    display: flex;
+    background:	#99aab5;
     width: 100%;
     height: 100vh;
+    justify-content: space-evenly;
+    padding-bottom: 64px;
 }
+
+#Experience ul{
+    align-items: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff; 
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+    font-size: 2em;
+}
+
+#Experience ul li a{
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+#Experience div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 64px;
+    border-radius: 50px;
+    background: #292c2e;
+    box-shadow: 20px 20px 60px #232527,
+                -20px -20px 60px #2f3335;
+}
+
+#Experience ul li a:hover{
+    cursor: pointer;
+    background: #99aab5;
+}
+
+#Experience ul li img{
+    width: 12em;
+    height: 12em;
+    object-fit: contain;
+}
+
+#Experience ul li h6{
+    padding: 1em;
+}
+
+#Experience ul li h2{
+    padding-bottom: 1em;
+}
+
 
 #Skills {
     display: block;
@@ -78,13 +169,6 @@ nav ul li:hover {
     height: 100vh;
 }
 
-#Espacio {
-    display: block;
-    background: #ffffff;
-    width:  100%;
-    height: 64px;
-}
-
 .secciones {
     padding-top: 64px;
 }
@@ -93,6 +177,7 @@ nav ul li:hover {
 .carouselContainer{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .carouselSlide{
     display: flex;
