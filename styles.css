@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+header {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.25em;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: rgb(54, 51, 255);
+}
+
+#Hero {
+    display: block;
+    background: rgb(54, 51, 255);
+    width: 100%;
+    height: 100vh;
+}
+
+#AboutMe {
+    display: block;
+    background: rgb(201, 255, 51);
+    width: 100%;
+    height: 100vh;
+}
+
+#Experience {
+    display: block;
+    background: rgb(51, 255, 78);
+    width: 100%;
+    height: 100vh;
+}
+
+#Skills {
+    display: block;
+    background: rgb(255, 51, 163);
+    width: 100%;
+    height: 100vh;
+}
+
+#ContactMe {
+    display: block;
+    background: rgb(255, 208, 0);
+    width: 100%;
+    height: 100vh;
+}
